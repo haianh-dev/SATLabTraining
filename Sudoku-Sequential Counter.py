@@ -69,7 +69,7 @@ class SudokuSATSolver:
                     solved_board[row][col] = value
             return solved_board
         return None 
-puzzle = [[5, 3, 0, 0, 7, 0, 0, 0, 0],
+sudoku = [[5, 3, 0, 0, 7, 0, 0, 0, 0],
     [6, 0, 0, 1, 9, 5, 0, 0, 0],
     [0, 9, 8, 0, 0, 0, 0, 6, 0],
     [8, 0, 0, 0, 6, 0, 0, 0, 3],
@@ -81,7 +81,7 @@ puzzle = [[5, 3, 0, 0, 7, 0, 0, 0, 0],
 ]
 
 solver = SudokuSATSolver()
-result = solver.solve(puzzle)
+result = solver.solve(sudoku)
 
 if result:
     for row in result: 
